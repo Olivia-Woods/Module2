@@ -16,6 +16,7 @@
             background-color: #f4f4f4; 
             color: #333;
             display: flex;
+            flex-direction: column; /* Change to column for better mobile view */
         }
 
         /* Sidebar Styles */
@@ -124,6 +125,56 @@
         .return-home-link:hover {
             color: #FF93D5;
         }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                box-shadow: none;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 10px;
+            }
+
+            .resume-header h1 {
+                font-size: 40px;
+            }
+
+            .sidebar img {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sidebar {
+                padding: 10px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            .resume-header h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .sidebar img {
+                width: 70%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -133,7 +184,7 @@
     <img src="portrait.png" alt="Olivia Woods"> <!-- Your Picture Here -->
     <h2><span style="color:#FF93D5">Olivia</span> <span style="color:#E61F93">Woods</span></h2>
     <p>oarwoods@gmail.com</p>
-    <p>+61 401 244 446</p>
+    <p>+61 4XX XXX XXX</p>
     <p><a class="github-link" href="https://github.com/Olivia-Woods" target="_blank">GitHub</a></p> <!-- Clickable GitHub Link -->
     <p><a class="return-home-link" href="WebPage.html" target="_blank">Return Home</a></p> <!-- Clickable Home Link -->
 
