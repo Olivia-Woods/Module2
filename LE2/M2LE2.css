@@ -1,0 +1,123 @@
+/* Selectors and Combinators */
+/* Questions 1.1, 1.2, 1.3 and 1.4 */
+  article {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid black;
+  }
+  
+  .style-me1 {
+    color: red;
+  }
+  
+  #style-me2 {
+    color: blue;
+  }
+  
+  .style-me1#style-me2 {
+    color: purple;
+  }
+  
+  /* Questions 2.1 and 2.2 */
+  .my-descendants-are-styled p {
+    background: red;
+  }
+
+  .my-children-are-styled > p {
+    background: lightgreen;
+  }
+  
+/* Box Model and Common Properties */
+/* Questions 1-8 */
+  .box {
+  background-color: #c1d3ff; 
+  margin: 40px; /* 1-Value Syntax */
+  padding: 15px 25px; /* 2-Value Syntax */
+  width: 400px; 
+  height: 200px; 
+  border: 10px solid rgb(97, 124, 241); 
+  border-radius: 20px; 
+  box-sizing: border-box; /* Including Padding and Border in Element's Total Width and Height */
+  overflow: auto; 
+  outline: 10px solid blue; 
+  background-image: url('Image.png'); 
+  background-size: cover; /* Cover the Entire Box */
+  background-repeat: no-repeat; 
+  background-position: center; 
+  }
+
+/* Positioning */
+/* Questions 1-3 */
+  .position-absolute {
+    position: absolute;
+    top: 0; /* Fix Top */
+    background-color: rgba(22, 74, 243, 0.6);
+    left: 10px; /* Example Left Position */
+  }
+  
+  .position-relative {
+    position: relative; 
+    background-color: rgba(22, 74, 243, 0.6);
+  }
+  
+  .position-sticky {
+    position: sticky;
+    top: 0; 
+    background-color: rgba(22, 74, 243, 0.6);
+  }
+  
+/* Styling Text */
+/* Questions 1-5 */
+  .text-style {
+    color: blue; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    font-weight: 100; 
+    font-family: "Roboto", sans-serif;
+    font-style: normal; 
+    text-align: justify; 
+    letter-spacing: 1px; 
+    word-spacing: 2px; 
+    text-transform: capitalize; 
+    text-decoration: line-through; 
+  }
+  
+/* Styling links */
+/* Questions 1-3 */
+  a, a:link {
+    color: #007BFF; 
+    font-size: 14px; 
+    font-weight: bold; 
+    text-decoration: none; 
+  }
+  
+  a:visited {
+    color: purple; 
+    font-style: italic; 
+  }
+  
+  a:hover, a:active, a:focus {
+    color: #0056b3; 
+    text-decoration: underline;
+  }
+  
+/* VI. calc() */
+/* Questions 1-3 */
+  .calc-style {
+    width: 100vw; 
+    background-color: rgba(200, 200, 200, 0.5);
+  }
+  
+  .calc-style {
+    width: calc(100vw - 100px);
+  }
+  
+  .fixed-width-col {
+    width: 350px; 
+    display: inline-block;
+  }
+  
+  .fluid-col {
+    display: inline-block; 
+    width: calc(100% - 350px); 
+  }

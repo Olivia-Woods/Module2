@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styleSheet.css">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; 
+            color: #333;
+            display: flex;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px #FF93D5;
+            height: 100vh; 
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Space Between Items and Logo */
+        }
+
+        .sidebar img {
+            width: 100%; 
+            border-radius: 50%; /* Circular */
+            margin-bottom: 20px;
+        }
+
+        .sidebar h2 {
+            color: #333; 
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .sidebar p {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        /* Main Content Styles */
+        .content {
+            flex: 1; 
+            padding: 20px;
+            margin-left: 270px; /* Space for Sidebar */
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #FF93D5;
+            font-size: 56px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #FF93D5;
+            padding-bottom: 5px;
+            color: #FF93D5;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Logo Styles */
+        .logo-container {
+            text-align: center;
+            margin-top: auto; 
+            margin-bottom: 10px; /* Space from the Bottom */
+        }
+
+        .logo-container img {
+            max-width: 90%; 
+            height: auto; 
+            border-radius: 0; 
+        }
+
+        /* Link Styles */
+        .github-link {
+            color: #FF93D5; 
+            text-decoration: none; 
+        }
+
+        .github-link:hover {
+            color: #E61F93; 
+        }
+
+        .return-home-link {
+            color: #E61F93; 
+            font-weight: bold;
+            text-decoration: none; 
+            margin-top: auto; 
+            text-align: center; 
+        }
+        .return-home-link:hover {
+            color: #FF93D5;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <img src="portrait.png" alt="Olivia Woods"> <!-- Your Picture Here -->
+    <h2><span style="color:#FF93D5">Olivia</span> <span style="color:#E61F93">Woods</span></h2>
+    <p>oarwoods@gmail.com</p>
+    <p>+61 401 244 446</p>
+    <p><a class="github-link" href="https://github.com/Olivia-Woods" target="_blank">GitHub</a></p> <!-- Clickable GitHub Link -->
+    <p><a class="return-home-link" href="WebPage.html" target="_blank">Return Home</a></p> <!-- Clickable Home Link -->
+
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <img src="logo.png" alt="Liv in Tech Logo"> <!-- Logo Here -->
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+    <div class="resume-header">
+        <h1><span style="color:#FF93D5">Olivia</span> <span style="color:#E61F93">Woods</span></h1>    
+    </div>
+
+    <!-- Skills -->
+    <div class="section" id="skills">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li><strong>HTML:</strong> Intermediate</li>
+            <li><strong>CSS:</strong> Intermediate</li>
+            <li><strong>JavaScript:</strong> Basic</li>            
+            <li><strong>Soft Skills:</strong> Communication, Critical Thinking, Problem-Solving.</li>        
+        </ul>
+    </div>
+
+    <!-- Experience -->
+    <div class="section" id="experience">
+        <h2>Experience</h2>
+        <ul class="experience">
+            <li><strong>Strategy and Transactions | Real Estate Advisory</strong> - EY</li>
+            <li><strong>Analyst | Commercial & Mixed Use Assets </strong> - Greenpool Capital </li>
+        </ul>
+    </div>
+
+    <!-- Education -->
+    <div class="section" id="education">
+        <h2>Education</h2>
+        <ul class="education">
+            <li><strong>Bachelor of Commerce (Property Development and Valuation)</strong> - Curtin University (2022)</li>
+            <li>Graduated in 2022 with two letters of commendation for academic excellence, ranking among the top students in the School of Economics, Finance, and Property.</li>
+            <br>
+            <li><strong>Postgraduate Studies in Software Engineering</strong> - Institute of Data (In Progress)</li>
+            <li><strong>Module 1:</strong>
+                <ul>
+                    <li><em>Software Development Principles</em></li>
+                    <li><em>Creating a Basic Web Page</em></li>
+                    <li><em>Version Control</em></li>
+                    <li><em>Gathering Requirements & Wireframe Design</em></li>
+                    <li><em>Test Driven Development</em></li>
+                </ul>
+            </li>
+            <li><strong>Module 2:</strong>
+                <ul>
+                    <li><em>Introductory Front-End Development</em></li>
+                    <li><em>Web Browsers and the Internet</em></li>
+                    <li><em>HTML</em></li>
+                    <li><em>CSS</em></li>
+                    <li><em>Fluid Layout</em></li>
+                </ul>
+            </li>
+            <li><strong>Module 3:</strong>
+                <ul>
+                    <li><em>JavaScript Programming</em></li>
+                    <li><em>Fundamentals</em></li>
+                    <li><em>Intermediate JavaScript</em></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Olivia Woods. All Rights Reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>

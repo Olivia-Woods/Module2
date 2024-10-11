@@ -1,0 +1,354 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 180px; /* Adjust Based on Header Height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Styles */
+header {
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px #FF93D5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+}
+
+.logo {
+    margin-right: auto; /* Push Links to the Right */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+nav ul li {
+    margin-left: 20px; /* Space Between Links */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove Margin from the First Item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #FF93D5;
+    border-radius: 6px;
+}
+
+/* Centering Resume link */
+.resume-container {
+    margin-left: auto; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.resume-link {
+    text-decoration: none; /* Removes Underline */
+    color: #FF93D5; 
+    padding: 10px 15px;
+    transition: color 0.3s ease; 
+    font-size: x-large;
+}
+
+.resume-link:hover {
+    color: #E61F93; 
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+/* Custom Heart Cursor for the Image */
+.intro img {
+    cursor: url('favicon.ico'), auto; /* Use Favicon as the Cursor */
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects Section */
+.projects {
+    padding: 60px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: 300px;
+    margin: 20px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Dice Section */
+
+/* Dice Container */
+.dice-container {
+    display: flex;
+    flex-direction: column; /* Stack Elements Vertically */
+    align-items: center; /* Center Horizontally */
+    margin-top: 20px; /* Space From the Top */
+    margin-bottom: 20px; /* Space From the Bottom */
+}
+
+/* Dice */
+#dice {
+    margin: 10px 0; /* Space between Dice and Button */
+    width: 120px; /* Adjust Size as Needed */
+    height: 120px; /* Adjust Size as Needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #FF93D5; /* Border Color */
+    border-radius: 10px; /* Rounded Corners */
+    background-color: white; /* Background Color */
+    box-shadow: 0 4px 10px rgba(255, 102, 196, 0.4); /* Add a Slight Shadow for Depth */
+    transition: transform 0.3s ease; /* Smooth Transform Effect */
+}
+
+#dice:hover {
+    transform: scale(1.04); /* Slightly Enlarge the Dice on Hover */
+}
+
+#dice img {
+    width: 90%; /* Responsive Image Size */
+    height: auto; /* Maintain Aspect Ratio */
+}
+
+/* Button */
+#rollButton {
+    margin: 10px 0; /* Space Above and Below the Button */
+    padding: 10px 20px; /* Padding for the Button */
+    background-color: #FF93D5; /* Button Color */
+    border: none; /* Remove Default Border */
+    border-radius: 5px; /* Rounded Corners for Button */
+    color: white; /* Text Color */
+    font-size: 1.1rem; /* Font Size */
+    cursor: pointer; /* Pointer Cursor on Hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth Transition */
+}
+
+#rollButton:hover {
+    background-color: #FF66C4; /* Darker Color on Hover */
+    transform: scale(1.05); /* Slightly Enlarge Button on Hover */
+}
+
+/* Result Text */
+#result {
+    text-align: center; /* Center Result Text */
+    margin: 10px 0; /* Space Above and Below Result Text */
+    font-size: 1.2rem; /* Adjust Font Size as Needed */
+    color: #333; /* Result Text Color */
+}
+
+/* Adjustments for smaller screens NEW NEW NEW */ 
+@media (max-width: 600px) {
+    .project-item {
+        width: 100%; /* Full width for mobile devices */
+        margin: 10px 0; /* Adjust margins for smaller screens */
+    }
+    
+    #dice {
+        width: 100px; /* Smaller dice for mobile */
+        height: 100px; /* Smaller height for mobile */
+    }
+
+    #rollButton {
+        width: 100%; /* Full width for the button */
+    }
+}
+
+/* Carousel Section */
+.testimonials {
+    padding: 60px 20px;
+    background: #f4f4f4;
+    text-align: center;
+    overflow: hidden; /* Ensure only One Testimonial Shows at a Time */
+    position: relative;
+}
+
+.testimonial-carousel {
+    display: flex;
+    width: 300%; /* Set the Width to 3 times the Container to fit all Testimonials */
+    animation: slide 20s infinite; /* Auto Slide Through the Testimonials */
+}
+
+.testimonial {
+    flex: 0 0 33.333%; /* Each Testimonial takes up 1/3rd of the Container Width */
+    padding: 20px;
+    background: #fff;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-style: italic;
+    color: #FF93D5;
+}
+
+/* Keyframes for sliding effect */
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Show the First Testimonial */
+    }
+    33% {
+        transform: translateX(-33.333%); /* Show the Second Testimonial */
+    }
+    66% {
+        transform: translateX(-66.666%); /* Show the Third Testimonial */
+    }
+    100% {
+        transform: translateX(0); /* Back to the First Testimonial */
+    }
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FF93D5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Make it a Block Element */
+    margin: 20px left; /* Center the Button and add Vertical Margin */
+}
+
+button:hover {
+    background-color: #E61F93;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}

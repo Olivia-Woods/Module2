@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Form Example - Module 2 Lab Exercise">
+    <meta name="keywords" content="HTML, Form, Input">
+    <meta name="author" content="Olivia Woods">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example - HTML Learning</title>
+    <style> /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f2f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        nav {
+            background-color: #FF93D5; 
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px; 
+        }
+        nav a {
+            color: white; 
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background: #FF66C4;
+            border-radius: 6px; 
+        }
+        h1 {
+            text-align: center;
+            color: #FF66C4;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff; 
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(255, 102, 196, 0.1);
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        button {
+            font-size: medium;
+            padding: 10px 15px;
+            background-color: #FF66C4; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #FF93D5; 
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="M2LE1.html">Home</a>
+        <a href="M2LE1Form.html">Form</a>
+    </nav>
+
+    <h1><span style="color: #f52ea8;">Form</span> Example</h1>
+    
+    <form method="POST" action="http://127.0.0.1:5500/form.html">
+        <div>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+        <div>
+            <label>Favourite Coding Language:</label> 
+            <div>
+                <input type="radio" id="html" name="language" value="HTML" required>
+                <label for="html">HTML</label>
+            </div>
+            <div>
+                <input type="radio" id="css" name="language" value="CSS">
+                <label for="css">CSS</label>
+            </div>
+            <div>
+                <input type="radio" id="javascript" name="language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+        </div>
+        <div>
+            <label>Vehicle Types Owned:</label>
+            <div>
+                <input type="checkbox" id="car" name="vehicle" value="Car">
+                <label for="car">Car</label>
+            </div>
+            <div>
+                <input type="checkbox" id="bike" name="vehicle" value="Bike">
+                <label for="bike">Bike</label>
+            </div>
+            <div>
+                <input type="checkbox" id="boat" name="vehicle" value="Boat">
+                <label for="boat">Boat</label>
+            </div>
+        </div>
+        <div>
+            <label for="car-brand">Brand of Car:</label>
+            <select id="car-brand" name="car-brand">
+                <option value="McLaren">McLaren</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="MG">MG</option>
+            </select>
+        </div>
+        <button type="submit">Submit Form</button>
+    </form>
+
+</body>
+</html>

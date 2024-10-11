@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia Woods</title>
+       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+       <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<!-- Top Section / Header -->
+
+<header>
+    <nav>
+        <div class="logo">
+            <h1 style="display: flex; align-items: center;">
+                <img src="logo.png" alt="Liv in Tech" style="width: 400px; height: auto; margin-right: 10px;">
+            </h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="resume-container">
+            <a href="Resume.html" class="resume-link">Resume</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Home -->
+
+    <section id="home" class="home">
+        <div class="intro">
+            <h1>Hello, I'm <span style="color:#FF93D5">Olivia</span> <span style="color:#E61F93">Woods</span></h1>
+            <p>Coding like a girl, designing the future with creativity.</p>
+            <img src="portrait.png" alt="Portrait" style="display: block; margin: 20px auto 0 auto; width: 600px; height: auto;">
+        </div>
+    </section>
+
+<!-- About Me -->
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I’m <span style="color:#FF93D5">Olivia</span> <span style="color:#E61F93">Woods</span>, a creative who loves blending design, drawing, and code to create beautiful digital experiences. I hold a Bachelor’s degree in Commerce from Curtin University and am currently pursuing postgraduate studies in Software Engineering at the Institute of Data, a program endorsed by Curtin University. My experience and current learning adventures allow me to tackle projects with creativity and strategy, making the process as exciting as the results.</p>
+    </section>
+
+<!-- Projects -->
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <!-- Each project item -->
+            <div class="project-item">
+                <img src="chai.png" alt="Chai Shop">
+                <h3>Isometric Design</h3>
+                <p><b>Chai Shop</b> in Procreate.</p>
+            </div>
+            <!-- Add more projects as needed -->
+            <div class="project-item">
+                <img src="bed.png" alt="Bedroom">
+                <h3>Isometric Design</h3>
+                <p><b>Bedroom</b> in Procreate.</p>
+            </div>
+            <!-- Add more projects as needed -->
+             
+        </div>
+    </section>
+
+<!-- Dice Roller -->
+
+<div class="dice-container">
+    <h2 id="result">Roll the Dice!</h2>
+    <div id="dice">
+        <img id="diceImage" src="default-dice.png" alt="Default Dice"> <!-- Default Image Set Here -->
+    </div>
+    <button id="rollButton">Roll Dice</button>
+</div>
+
+<!-- Testimonials -->
+
+<section class="testimonials">
+    <div class="testimonial-carousel">
+        <div class="testimonial">
+            <p>"This website is fantastic!"</p>
+            <span>- Happy Client</span>
+        </div>
+        <div class="testimonial">
+            <p>"Amazing design and coding skills!"</p>
+            <span>- Satisfied User</span>
+        </div>
+        <div class="testimonial">
+            <p>"I would highly recommend Olivia's work."</p>
+            <span>- Client</span>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information -->
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="your-server-endpoint" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<!-- Footer -->
+
+    <footer>
+        <p>© 2024 Olivia Woods. All Rights Reserved.</p>
+    </footer>
+
+<!-- JavaScript -->
+    
+<script src="dice.js"></script>
+
+</body>
+</html>
