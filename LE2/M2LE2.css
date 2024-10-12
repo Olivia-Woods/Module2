@@ -19,7 +19,7 @@
   }
   
   /* Questions 2.1 and 2.2 */
-  .my-descendants-are-styled p { /* Decendants of Combinator */
+  .my-descendants-are-styled p { /* Descendants of Combinator */
     background: red;
   }
 
