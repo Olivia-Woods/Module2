@@ -65,14 +65,19 @@
 </head>
 <body>
 
+<!-- Navigation Links -->
     <nav>
         <a href="M2LE1.html">Home</a>
         <a href="M2LE1Form.html">Form</a>
     </nav>
 
+<!-- Heading -->
     <h1><span style="color: #f52ea8;">Form</span> Example</h1>
     
+<!-- Form -->
     <form method="POST" action="http://127.0.0.1:5500/form.html">
+
+        <!-- Text Input -->
         <div>
             <label for="first-name">First Name:</label>
             <input type="text" id="first-name" name="first-name" required>
@@ -81,6 +86,8 @@
             <label for="last-name">Last Name:</label>
             <input type="text" id="last-name" name="last-name" required>
         </div>
+
+        <!-- Radio Button -->
         <div>
             <label>Favourite Coding Language:</label> 
             <div>
@@ -96,6 +103,8 @@
                 <label for="javascript">JavaScript</label>
             </div>
         </div>
+                
+        <!-- Checkbox -->
         <div>
             <label>Vehicle Types Owned:</label>
             <div>
@@ -111,6 +120,8 @@
                 <label for="boat">Boat</label>
             </div>
         </div>
+
+        <!-- Dropdown Menu -->
         <div>
             <label for="car-brand">Brand of Car:</label>
             <select id="car-brand" name="car-brand">
@@ -119,6 +130,8 @@
                 <option value="MG">MG</option>
             </select>
         </div>
+
+        <!-- Submit Form -->
         <button type="submit">Submit Form</button>
     </form>
 
