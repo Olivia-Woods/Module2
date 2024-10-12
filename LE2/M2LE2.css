@@ -1,29 +1,29 @@
 /* Selectors and Combinators */
 /* Questions 1.1, 1.2, 1.3 and 1.4 */
-  article {
+  article { /* Type Selector */
     margin: 20px 0;
     padding: 20px;
     border: 1px solid black;
   }
   
-  .style-me1 {
+  .style-me1 { /* Class Selector */
     color: red;
   }
   
-  #style-me2 {
+  #style-me2 { /* ID Selector */
     color: blue;
   }
   
-  .style-me1#style-me2 {
+  .style-me1#style-me2 { /* Specific Selector */
     color: purple;
   }
   
   /* Questions 2.1 and 2.2 */
-  .my-descendants-are-styled p {
+  .my-descendants-are-styled p { /* Decendants of Combinator */
     background: red;
   }
 
-  .my-children-are-styled > p {
+  .my-children-are-styled > p { /* Child Combinator > (Direct Children) */
     background: lightgreen;
   }
   
@@ -40,7 +40,7 @@
   box-sizing: border-box; /* Including Padding and Border in Element's Total Width and Height */
   overflow: auto; 
   outline: 10px solid blue; 
-  background-image: url('Image.png'); 
+  background-image: url('image.png'); 
   background-size: cover; /* Cover the Entire Box */
   background-repeat: no-repeat; 
   background-position: center; 
@@ -84,19 +84,19 @@
   
 /* Styling links */
 /* Questions 1-3 */
-  a, a:link {
+  a, a:link { /* Untouched Link */
     color: #007BFF; 
     font-size: 14px; 
     font-weight: bold; 
     text-decoration: none; 
   }
   
-  a:visited {
+  a:visited { /* Visited Link */
     color: purple; 
     font-style: italic; 
   }
   
-  a:hover, a:active, a:focus {
+  a:hover, a:active, a:focus { /* Hovered & Other Link Styles */
     color: #0056b3; 
     text-decoration: underline;
   }
