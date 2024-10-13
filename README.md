@@ -1,5 +1,5 @@
 # Module2
-Module 2 Lab Exercises
+HTML & CSS
 LE1 - HTML
 LE2 - CSS
 LE3 - FLEXBOX
